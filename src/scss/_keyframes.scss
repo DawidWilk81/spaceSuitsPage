@@ -1,0 +1,28 @@
+@keyframes rotate{
+    from{
+        transform:rotate(0);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes rotateAstro{
+    0%{   
+        transform:rotate(0);
+    }
+    25%{
+        transform:rotate(-2deg);
+    }
+    50%{
+        transform:rotate(0);
+    }
+    75%{
+        transform:rotate(2deg);
+    }
+    100%{
+        transform:rotate(0);
+        }
+    
+
+}

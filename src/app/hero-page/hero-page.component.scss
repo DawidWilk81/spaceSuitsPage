@@ -1,0 +1,132 @@
+@import "../../scss/_mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,700&family=Merriweather:ital,wght@1,300&display=swap');
+@import "../../scss/_keyframes.scss";
+
+#whole{
+    height: 200vh;
+    color:#f9f9f9;
+    // background-color: blue;
+    background-image: url('../../assets/backgroundF.jpg');
+    .first{
+        height: 100vh;
+        width: 100vw;
+        #firstLeft{
+            height: 100vh;
+            img{
+                position: relative;
+                top:10px;
+                width: 80vw;
+                height: 100vh;
+                left:-100px;
+                animation: rotateAstro 8s infinite;
+                animation-timing-function: linear;
+                @media only screen and (max-width:500px){
+                    width: 100vw;
+                    left:-120px; 
+                }
+            }
+        }
+        #firstRight{
+            height: 100vh;
+
+            #buttonFirst{
+                opacity: 0.9;
+            }
+            #buttonFirst{
+                width: 150px;
+            }
+            h1{
+                font-size:4rem;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 1.9rem;
+                color:#00b957;
+                max-width: 60%;
+                line-height: 45px;
+            }
+            // background-color: red;
+        }
+    }
+    .second{
+        height: 100vh;
+        width: 100vw;
+
+        #secondLeft{
+            height: 100vh;
+            z-index: 1;
+            #gradWord{
+                background: rgb(255,255,255);
+                background: linear-gradient(333deg, rgba(255,255,255,1) 0%, rgba(244,0,0,1) 100%); 
+                -webkit-background-clip: text;
+                background-clip: text ;
+                -webkit-text-fill-color: transparent;
+            }
+
+            #gradWordR{
+                background: rgb(255,255,255);
+                background: linear-gradient(333deg, rgba(255,255,255,1) 0%, rgba(236,156,0,1) 100%); 
+                -webkit-background-clip: text;
+                background-clip: text ;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        #secondRight{
+            height: 100vh;
+            position: relative;
+            #mars{
+                width: 500px;
+                height: 500px;
+                position: absolute;
+                right: -30%;
+                top:10%;
+                min-width: 300px;
+                animation: rotate 80s infinite;
+                @media only screen and (min-width: 0px) {
+                    right: -95%;   
+                    width: 400px;
+                    height:400px;
+                }
+                @media only screen and (min-width: 500px) {
+                    right: -80%;   
+                    width: 500px;
+                    height:500px;
+                }
+                @media only screen and (min-width: 700px) {
+                    width: 500px;
+                    height: 500px;
+                    right: -30%;
+                }
+            }
+        }
+    }
+}
+
+
+
+nav{
+    width: 100vw;
+    height: 60px;
+    color:#f9f9f9f9;
+    position: fixed;
+    top:0;
+    z-index: 2;
+    #brand{
+        color:white;//Dodane aby nie było warninga
+    }
+    #naviButtons{
+        ul > li{
+            float: left;
+            margin-left:20px;
+            border-radius: 50px;
+            list-style-type: none;
+            padding:3px;
+            &:hover{
+                cursor: pointer;
+                
+            }
+        }
+    }
+}
+
+
