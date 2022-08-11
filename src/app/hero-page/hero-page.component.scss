@@ -7,22 +7,25 @@
     color:#f9f9f9;
     // background-color: blue;
     background-image: url('../../assets/backgroundF.jpg');
+
     .first{
         height: 100vh;
-        width: 100vw;
+        width: 98.9vw;
+
         #firstLeft{
             height: 100vh;
             img{
                 position: relative;
                 top:10px;
-                width: 80vw;
-                height: 100vh;
-                left:-100px;
+                width: 110vw;
+                height: 90vh;
+                left:-25vw;
                 animation: rotateAstro 8s infinite;
                 animation-timing-function: linear;
                 @media only screen and (max-width:500px){
-                    width: 100vw;
-                    left:-120px; 
+                    width: 120vw;
+                    height: 90vh;
+                    left:-150px; 
                 }
             }
         }
@@ -31,6 +34,7 @@
 
             #buttonFirst{
                 opacity: 0.9;
+                margin: 0 auto;
             }
             #buttonFirst{
                 width: 150px;
@@ -38,23 +42,61 @@
             h1{
                 font-size:4rem;
                 margin-bottom: 30px;
+                //TUTAJ
+                @media only screen and (min-width: 0px) {   
+                    font-size: 10vh;   
+                    line-height: 9vh;
+                } 
+
             }
+
             p{
-                font-size: 1.9rem;
-                color:#00b957;
+                font-size: 10vh;   
+                line-height: 9vh;
+                color:#e4f500;
                 max-width: 60%;
                 line-height: 45px;
+
+                white-space: nowrap;
+                //TUTAJ
+                @media only screen and (min-width: 0px) {   
+                    font-size: 1.1em;
+                }
+                @media only screen and (min-width: 500px) {   
+                    font-size: 1.2em;
+                }
+                @media only screen and (min-width: 700px) {   
+                    font-size: 1.7rem;
+                }
             }
             // background-color: red;
         }
     }
     .second{
         height: 100vh;
-        width: 100vw;
-
+        width: 98vw;
         #secondLeft{
             height: 100vh;
             z-index: 1;
+
+            #list > li {
+                color: rgb(255, 255, 255);
+                list-style-type: none;
+                font-size: 2.4em;
+
+                fa-icon{
+                    color: green;
+                    font-size: 30px;
+                }
+            }
+            h1{
+                //tutaj
+                @media only screen and (min-width: 0px) {   
+                    width: 400px;
+                    height:400px;
+                    right: -95%;
+                }
+            }
             #gradWord{
                 background: rgb(255,255,255);
                 background: linear-gradient(333deg, rgba(255,255,255,1) 0%, rgba(244,0,0,1) 100%); 
@@ -78,24 +120,27 @@
                 width: 500px;
                 height: 500px;
                 position: absolute;
-                right: -30%;
+                right: 0;
                 top:10%;
                 min-width: 300px;
                 animation: rotate 80s infinite;
-                @media only screen and (min-width: 0px) {
-                    right: -95%;   
+                border-radius: 100px;
+
+                @media only screen and (min-width: 0px) {   
                     width: 400px;
                     height:400px;
+                    right: -95%;
                 }
                 @media only screen and (min-width: 500px) {
-                    right: -80%;   
                     width: 500px;
                     height:500px;
+
                 }
                 @media only screen and (min-width: 700px) {
                     width: 500px;
                     height: 500px;
-                    right: -30%;
+                    right: -20%;
+
                 }
             }
         }
@@ -105,22 +150,26 @@
 
 
 nav{
-    width: 100vw;
+    width: 98vw;
     height: 60px;
     color:#f9f9f9f9;
     position: fixed;
     top:0;
     z-index: 2;
+    min-width: 350px;
     #brand{
         color:white;//Dodane aby nie było warninga
     }
     #naviButtons{
+
         ul > li{
             float: left;
             margin-left:20px;
             border-radius: 50px;
             list-style-type: none;
             padding:3px;
+            width: 20%;
+
             &:hover{
                 cursor: pointer;
                 

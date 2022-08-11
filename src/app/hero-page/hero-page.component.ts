@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faV, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-hero-page',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero-page.component.scss']
 })
 export class HeroPageComponent implements OnInit {
-
+  check = faCheckSquare;
   constructor() { }
 
   ngOnInit(): void {
+
+  }
+  lll(kaka:any){
+    console.log(this.check);
+    console.log(kaka);
+    
+
   }
 
 }
