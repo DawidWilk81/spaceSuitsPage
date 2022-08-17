@@ -7,11 +7,13 @@ import { FormsModule } from '@angular/forms';
 import { HeroPageComponent } from './hero-page/hero-page.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroPageComponent
+    HeroPageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

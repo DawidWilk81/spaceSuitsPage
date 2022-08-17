@@ -1,0 +1,35 @@
+#whole{
+    height: 100vh;
+    background-image: url('../../assets/notFound.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-position:center;
+    position: relative;
+    b{
+        font-size: 4vw;
+        text-shadow: 5px 9px 8px rgba(1, 9, 154, 0.8);
+        color: #030303cb;
+    }
+
+}
+
+#back{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom:10px;
+    left:10px; 
+    background-color: rgba(35, 35, 39, 0.678);
+    color:#0303037c;
+    &:hover{
+        cursor: pointer;
+        color:#f9f9f9f9;
+    }
+
+}
