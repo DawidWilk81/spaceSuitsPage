@@ -1,11 +1,11 @@
 <nav>
-    <div class="row p-4" #navi>
+    <div class="row p-4 d-flex justify-content-between" #navi>
         <div class='col-3' id="brand">LOGO</div>
-        <div class='col-9 d-flex justify-content-center' id="naviButtons">
+        <div class='col-7 col-sm-4 col-md-4' id="naviButtons">
             <ul>
                 <li (click)="scroll(home)" #homeNav>Home</li>
                 <li (click)="scroll(start)" #about>About</li>
-                <li class="mr-3" (click)="scroll(recommendations)" #recom>Recommendations</li>
+                <li (click)="scroll(recommendations)" #recom>Opinions</li>
             </ul>
         </div>
     </div>
@@ -48,20 +48,19 @@
 <!-- PIERWSZY DINO -->
         <div class="col-12 ml-4 mt-3" id="reccomendation">
             <div class="row">
-
-                <div class="col-2 avatar px-0">
+                <div class="col-4 col-md-3 avatar px-0">
                     <img src="../../assets/astro.jpg" alt='reccomendationIMG'/>
                 </div>
 
-                <div class="col-9 text p-2">
+                <div class="col-8 col-md-9 text p-2">
                     <div class="col-12 desc">
                         <p>The best suit i've ever had, wonderful design and most importantly feels comfortable.</p>
                     </div>
                     
                     <div class="col-12 mx-2 rate">
                         <div class="row">
-                            <div class="col-8">Astronaut</div>
-                            <div class="rate col-4">
+                            <div class="col-5">Astronaut</div>
+                            <div class="rate col-7">
                                 <b>5/5</b>
                                 <b *ngFor="let x of [1,2,3,4,5]"><fa-icon [icon]="star"></fa-icon></b>
                             </div>
@@ -72,17 +71,17 @@
             </div>
         </div>
 <!-- DRUGI DINO -->
-        <div class="col-12 mt-3" id="reccomendation">
+        <div class="col-12 mt-3 pr-0" id="reccomendation">
             <div class="row">
-                <div class="col-10 text px-0">
+                <div class="col-8 col-md-9 text px-0">
                     <div class="col-12 desc">
                         <p>Finally found suit in my size. Suit is comfy and elegant, so i would reccomend that company everyone.</p>
                     </div>
                     
                     <div class="col-12 mx-2 rate">
                         <div class="row">
-                            <div class="col-8">T-rex</div>
-                            <div class="rate col-4">
+                            <div class="col-5">T-rex</div>
+                            <div class="rate col-7">
                                 <b>5/5</b>
                                 <b *ngFor="let x of [1,2,3,4,5]"><fa-icon [icon]="star"></fa-icon></b>
                             </div>
@@ -90,7 +89,7 @@
                     </div>
                 </div>
 
-                <div class="col-2 avatar">
+                <div class="col-4 col-md-3 avatar p-0">
                     <img src="../../assets/suit.jpg" alt='reccomendationIMG'/>
 
                 </div>
@@ -100,19 +99,19 @@
 <!-- TRZECI DINO -->
         <div class="col-12 ml-4 mt-3" id="reccomendation">
             <div class="row">
-                <div class="col-2 avatar px-0">
-                    <img src="../../assets/alien.jpg" alt='reccomendationIMG'/>
+                <div class="col-4 col-md-3 avatar px-0">
+                    <img src="../../assets/astro.jpg" alt='reccomendationIMG'/>
                 </div>
 
-                <div class="col-9 text p-2">
+                <div class="col-8 col-md-9 text p-2">
                     <div class="col-12 desc">
-                        <p>Found it on my planet, now i look wonderful and feel comfortable like astronauts</p>
+                        <p>The best suit i've ever had, wonderful design and most importantly feels comfortable.</p>
                     </div>
                     
                     <div class="col-12 mx-2 rate">
                         <div class="row">
-                            <div class="col-8">Unknown</div>
-                            <div class="rate col-4">
+                            <div class="col-5">Astronaut</div>
+                            <div class="rate col-7">
                                 <b>5/5</b>
                                 <b *ngFor="let x of [1,2,3,4,5]"><fa-icon [icon]="star"></fa-icon></b>
                             </div>
