@@ -3,7 +3,7 @@
 
 ## Development server
 
-Run `ng serve`  after 'npm i' for a dev server. Navigate then to `http://localhost:4200/`.
+Run `ng serve`  after `npm i` for a dev server. Navigate then to `http://localhost:4200/`.
 
 <img src='ReadmeIMG.PNG' alt='spaceSuitWelcomeReadme'/>
 
